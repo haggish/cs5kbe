@@ -42,7 +42,7 @@ object CS5k extends App with Protocols {
           }
         } ~ put {
           pathPrefix(Segment) { id =>
-            pathEnd {
+            pathEndOrSingleSlash {
               entity(as[CodeSet]) { cs =>
                 complete {
                   s"save or update codeset $id: $cs"
@@ -57,7 +57,7 @@ object CS5k extends App with Protocols {
             }
           }
         } ~ delete {
-          pathEnd {
+          pathEndOrSingleSlash {
             complete {
               "delete all codesets"
             }
