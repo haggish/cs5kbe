@@ -1,6 +1,6 @@
-name         := "akka-http-microservice"
-organization := "com.theiterators"
-version      := "1.0"
+name         := "cs5kbe"
+organization := "org.katastrofi"
+version      := "0.1"
 scalaVersion := "2.11.5"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
